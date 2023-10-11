@@ -29,12 +29,13 @@ public:
             }
             return false;*/
 
-            unordered_set<int> seen;
+            /*unordered_set<int> seen;
             for(int i:nums)
             {
                 if(seen.count(i)>0) return true;
                 seen.insert(i);
             }
-            return false;
+            return false;*/
+            return nums.size() > set<int>(nums.begin(),nums.end()).size();
     }
 };
