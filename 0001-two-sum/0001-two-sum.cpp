@@ -14,7 +14,7 @@ public:
         }
         return {};*/
 
-        /*unordered_map<int,int>mp;
+        unordered_map<int,int>mp;
 
         for(int i=0;i<nums.size();i++)
         {
@@ -25,8 +25,8 @@ public:
             }
             mp[nums[i]]=i;
         }
-        return {};*/
-        int size=nums.size();
+        return {};
+        /*int size=nums.size();
         vector<pair<int,int>>ans;
         for(int i=0;i<size;i++)
         {
@@ -50,6 +50,6 @@ public:
                 low++;
             }
         }
-        return {};
+        return {};*/
     }
 };
