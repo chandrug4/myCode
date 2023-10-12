@@ -14,7 +14,7 @@ public:
         }
         return {};*/
 
-        unordered_map<int,int>mp;
+        /*unordered_map<int,int>mp;
 
         for(int i=0;i<nums.size();i++)
         {
@@ -24,6 +24,31 @@ public:
                 return {i,mp[t]};
             }
             mp[nums[i]]=i;
+        }
+        return {};*/
+        int size=nums.size();
+        vector<pair<int,int>>ans;
+        for(int i=0;i<size;i++)
+        {
+            ans.push_back({nums[i],i});
+        }
+        sort(ans.begin(),ans.end());
+        int low=0,high=size-1;
+        while(low<high)
+        {
+            int sum = ans[low].first + ans[high].first;
+            if(sum==target) 
+            {
+                return {ans[low].second,ans[high].second};
+            }
+            else if(sum>target)
+            {
+                high--;
+            }
+            else
+            {
+                low++;
+            }
         }
         return {};
     }
