@@ -6,7 +6,7 @@ public:
         if(dividend==divisor) return 1;
 
         isPosi= dividend<0 == divisor<0;
-        
+         
         unsigned int a=abs(dividend);
         unsigned int b=abs(divisor);
         while(a>=b)
