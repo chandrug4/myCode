@@ -14,8 +14,7 @@ public:
                 int sum=comp+nums[first]+nums[last];
                 if(sum==0)
                 {
-                    vector<int>good={comp,nums[first],nums[last]};
-                    ss.insert(good);
+                    ss.insert({comp,nums[first],nums[last]});
                     first++;
                     last--;
                 }
