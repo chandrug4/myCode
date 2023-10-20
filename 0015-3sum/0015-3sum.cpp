@@ -5,7 +5,7 @@ public:
         sort(nums.begin(),nums.end());
         set<vector<int>>ss;
         vector<vector<int>> ans;
-        for(int i=0;i<n;i++)
+        for(int i=0;i<n-2;i++)
         {
             int comp=nums[i],first=i+1,last=n-1;
             while(first<last)
