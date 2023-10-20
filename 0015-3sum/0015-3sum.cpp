@@ -7,8 +7,7 @@ public:
         vector<vector<int>> ans;
         for(int i=0;i<n;i++)
         {
-            int comp=nums[i],first=i+1;
-            int last=n-1;
+            int comp=nums[i],first=i+1,last=n-1;
             while(first<last)
             {
                 int sum=comp+nums[first]+nums[last];
@@ -20,11 +19,13 @@ public:
                 }
                 else if(sum>0)
                 {
-                    last--;
+                    if(nums[last]==nums[last-1]) last-=2;
+                    else last--;
                 }
                 else
                 {
-                    first++;
+                    if(nums[first]==nums[first+1]) first+=2;
+                    else first++;
                 }
             }
             
