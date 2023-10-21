@@ -27,7 +27,7 @@ public:
         cout<<third;
         if(nums.size()<3) return first;
         if(found==0 && third==INT_MIN) return first;
-        if(found==1 && second==INT_MIN) return first;
+        if(second==INT_MIN) return first;
         return third;
     }
 };
