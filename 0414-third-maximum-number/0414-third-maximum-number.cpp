@@ -24,7 +24,7 @@ public:
             if(nums[i]==INT_MIN) found=1;
         }
         //if(third>LLONG_MIN) found=1;
-        cout<<third;
+        //cout<<third;
         if(nums.size()<3) return first;
         if(found==0 && third==INT_MIN) return first;
         if(second==INT_MIN) return first;
